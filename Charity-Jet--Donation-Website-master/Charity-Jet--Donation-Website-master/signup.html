@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GIVEWISE | Contact</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+</head>
+<style>
+    .container {
+  text-align: center;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 50%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form button {
+  padding: 8px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.toggle-form {
+  margin-top: 20px;
+}
+
+.toggle-form p {
+  margin: 5px;
+}
+
+.hidden {
+  display: none;
+}
+.toggle-form {
+  margin-top: 20px;
+}
+
+.toggle-form p {
+  margin: 5px;
+}
+
+.toggle-form span {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.toggle-form span:hover {
+  text-decoration: underline;
+}
+</style>
+<script>
+    // script.js
+document.addEventListener('DOMContentLoaded', function () {
+  const loginForm = document.getElementById('loginForm');
+  const signupForm = document.getElementById('signupForm');
+  const toggleSignup = document.getElementById('toggleSignup');
+  const toggleLogin = document.getElementById('toggleLogin');
+
+  toggleSignup.addEventListener('click', function () {
+    loginForm.classList.add('hidden');
+    signupForm.classList.remove('hidden');
+  });
+
+  toggleLogin.addEventListener('click', function () {
+    signupForm.classList.add('hidden');
+    loginForm.classList.remove('hidden');
+  });
+
+  loginForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+    const email = document.getElementById('loginEmail').value;
+    const password = document.getElementById('loginPassword').value;
+    // Perform login authentication here
+    console.log('Login with:', email, password);
+  });
+
+  signupForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+    const username = document.getElementById('signupUsername').value;
+    const email = document.getElementById('signupEmail').value;
+    const password = document.getElementById('signupPassword').value;
+    // Perform signup process here
+    console.log('Signup with:', username, email, password);
+  });
+});
+
+</script>
+<body>
+    <!-- ----------------------------------------NAVBAR----------------------------------------------------->
+    <nav class="nav nav_top">
+      <div class="logo">
+          <a href="index.html"><img src="images/GIVEWISE.jpg" height="80" width="150"></a>
+      </div>
+      <div class="nav_side">
+          <a href="index.html">HOME</a>
+          <a href="about.html">ABOUT US</a>
+          <a href="donate.html">DONATE</a>
+          <a href="contact.html">CONTACT</a>
+          <a href="geolocation.html">GEOLOCATION</a>
+          <a href="Validation.html">Need Funds?</a>
+          <a href="signup.html" style="float: right; margin-top: 2px; margin-right: 0px;padding-right: 0px;">SIGNUP/SIGNIN</a>
+      </div>
+  </nav>
+    <!-- --------------------------------------------Login-------------------------------------------------------->
+    <div class="contact_container" style="padding-top:100px;">
+        <div class="container">
+            <form id="loginForm" class="form" style="color: black;">
+              <h2 style="color: white;">Login</h2>
+              <input type="email" id="loginEmail" placeholder="Email" required>
+              <input type="password" id="loginPassword" placeholder="Password" required>
+              <button type="submit">Login</button>
+            </form>
+        
+            <form id="signupForm" class="form hidden" style="color: black;">
+              <h2>Sign Up</h2>
+              <input type="text" id="signupUsername" placeholder="Username" required>
+              <input type="email" id="signupEmail" placeholder="Email" required>
+              <input type="password" id="signupPassword" placeholder="Password" required>
+              <button type="submit">Sign Up</button>
+            </form>
+        
+            <div class="toggle-form">
+              <p>Don't have an account? <span id="toggleSignup">Sign Up</span></p>
+              <p>Already have an account? <span id="toggleLogin">Login</span></p>
+            </div>
+          </div>
+        
+        
+    </div>
+    <!-- --------------------------------------------FOOTER-------------------------------------------------------->
+    <footer>
+        <div class="pages">
+          <a href="index.html"><img class="aimg" src="images/GIVEWISE.jpg" height= "80" width="200"></a>
+            <p>GIVEWISE cares for needy children by empowering their caregivers to do their best work, with compassion, grace, integrity and excellence. Our end goal is to support children worldwide and see every child reach the potential that God has for them.</p>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </div>
+        <div class="doc">
+            <h3>Navigation</h3>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="donate.html">Donate</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <a href="contact" target="_blank">VIT Bhopl, Madhya Pradesh, 466114</a>
+            <a href="tel: +910000000000">+91 6307580033</a>
+            <a href="mailto: ppppppp@gmail.com">foundation@givewise.com</a>
+        </div>
+        <div class="social">
+            <h3>Support</h3>
+            <p>Help us shape a better future fot children all over the world</p>
+            <div class="side_btn">
+                <a href="donate.html">JOIN US TODAY</a>
+            </div>
+        </div>
+        <hr>
+        <p>Copyright &copy; 2024 GIVEWISE. All rights reserved.</p>
+    </footer>
+</body>
+</html>

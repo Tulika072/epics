@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GIVEWISE | Contact</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+</head>
+<body>
+    <!-- ----------------------------------------NAVBAR----------------------------------------------------->
+    <nav class="nav nav_top">
+        <div class="logo">
+            <a href="index.html"><img src="images/GIVEWISE.jpg" height="80" width="150"></a>
+        </div>
+        <div class="nav_side">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="donate.html">DONATE</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="geolocation.html">GEOLOCATION</a>
+            <a href="Validation.html">Need Funds?</a>
+            <a href="signup.html" style="float: right; margin-top: 2px; margin-right: 0px;padding-right: 0px;">SIGNUP/SIGNIN</a>
+        </div>
+    </nav>
+    <!-- -----------------------------------------Main--------------------------------------------------------->
+    <div style="position: relative; padding-top: 90px; background-color: black; color: white; ">
+        <div class = "funds">
+        <form action="/submit_form" method="post">
+            <label for="name" style="font-weight: bold; font-size: 15px; ">Name on which you Need Funds:</label>
+            <input type="text" id="name" name="name" required style="color: black;"><br><br>
+    
+            <label for="email" style="font-weight: bold; font-size: 15px; ">Email:</label>
+            <input type="email" id="email" name="email" required style="color: black;"><br><br>
+    
+            <label for="password" style="font-weight: bold; font-size: 15px; ">Password:</label>
+            <input type="password" id="password" name="password" required style="color: black;"><br><br>
+    
+            <label for="gender" style="font-weight: bold; font-size: 15px; ">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male" style="font-weight: bold; font-size: 15px; ">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female" style="font-weight: bold; font-size: 15px; ">Female</label><br><br>
+    
+            <label for="picture" style="font-weight: bold; font-size: 15px; ">Upload files for validation:</label>
+            <input type="file" id="picture" name="picture" accept="image/*"><br><br>
+    
+            <input type="submit" value="Upload" style="background-color: black; border-radius: 10px; border-color: aqua; font-size: 15px;">
+            </form>
+        </div>
+    </div>
+    <!-- --------------------------------------------FOOTER-------------------------------------------------------->
+    <footer>
+        <div class="pages">
+          <a href="images/GIVEWISE.jpg" height= "80" width="200"></a>
+            <p>GIVEWISE cares for needy children by empowering their caregivers to do their best work, with compassion, grace, integrity and excellence. Our end goal is to support children worldwide and see every child reach the potential that God has for them.</p>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </div>
+        <div class="doc">
+            <h3>Navigation</h3>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="donate.html">Donate</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <a href="contact" target="_blank">VIT Bhopl, Madhya Pradesh, 466114</a>
+            <a href="tel: +910000000000">+91 6307580033</a>
+            <a href="mailto: ppppppp@gmail.com">foundation@givewise.com</a>
+        </div>
+        <div class="social">
+            <h3>Support</h3>
+            <p>Help us shape a better future fot children all over the world</p>
+            <div class="side_btn">
+                <a href="donate.html">JOIN US TODAY</a>
+            </div>
+        </div>
+        <hr>
+        <p>Copyright &copy; 2024 GIVEWISE. All rights reserved.</p>
+    </footer>
+</body>
+</html>
